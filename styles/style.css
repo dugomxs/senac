@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #201d38;
+  --secondary-color: #ffffff1a;
+  --terciary-color: #cac7ff71;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+nav, ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#logo {
+  font-size: 4rem;
+  text-decoration: none;
+  color: white;
+}
+
+#logo:active {
+  color: none;
+}
+
+li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+#searchClient, #addClient, .editButton, .deleteButton {
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton {
+  margin: 0 15px 0 0;
+  background-color: hsl(39, 100%, 67%);
+}
+
+.editButton:hover {
+  background-color: hsl(27, 100%, 67%);
+  transition: 300ms;
+}
+
+.deleteButton {
+  width: 45px;
+  background-color: hsl(348, 100%, 61%);
+}
+
+.deleteButton:hover {
+  background-color: rgb(250, 28, 28);
+  transition: 300ms;
+}
+
+#searchClient {
+  background-color: hsl(204, 86%, 53%);
+}
+
+#searchClient:hover {
+  transition: 300ms;
+  background-color: hsl(217, 71%, 53%);
+}
+
+#addClient {
+  background-color: hsl(171, 100%, 41%);
+}
+
+#addClient:hover {
+  transition: 300ms;
+  background-color: hsl(141, 53%, 53%);
+}
+
+#searchClientLogo, #addClientLogo {
+  color: white;
+  font-size: 2rem;
+}
+
+main {
+  padding: 15px;
+
+}
+
+#wellcome {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.searchBar {
+  margin: 0 20px;
+  width: 80%;
+  max-width: 700px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 15px 10px;
+  flex: 1;
+  font-size: 20px;
+  color: white;
+}
+
+#searchBar::placeholder {
+  color: var(--terciary-color);
+}
+
+.searchBar button img {
+  width: 40px;
+}
+
+.searchBar button {
+  border: 0;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+#formContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  margin: 30px auto;
+  width: 70%;
+  border-radius: 4px;
+}
+
+input {
+  height: 40px;
+}
+
+#name, #number, #email, #CPF, #date, #cidade {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+#genres {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0 20px 0;
+}
+
+#label {
+  background-color: transparent;
+  color: var(--primary-color);
+  margin: 0 20px 0 0;
+  font-size: 1.5rem;
+}
+
+#sexM,#sexF {
+  margin: 0 5px 0 0;
+  height: 20px;
+}
+
+#submit {
+  background-color: var(--primary-color);
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  height: 60px;
+  font-size: 1.5rem;
+}
+
+#submit:hover {
+  transform: translateY(-10%);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.mainContainer {
+  background-color: white;
+  margin: 40px 0 20px 0;
+  padding: 15px;
+  width: 70%;
+  border-radius: 4px;
+}
+
+p, strong {
+  font-size: 1.5rem;
+}
+
+#editLogo, #deleteLogo {
+  font-size: 2rem;
+  color: white;
+}
+
+.buttonsContainer {
+  margin: 0 0 40px 0;
+}
+
